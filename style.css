@@ -1,89 +1,27 @@
-body {
-    background-color: #edf2f7;
-  }
-  .container {
-    max-width: 32rem;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  .card {
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  .card__header {
-    background-color: #edf2f7;
-    padding: 1rem 1.5rem;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-  }
-  .card__header h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #4a5568;
-  }
-  .card__body {
-    padding: 1.5rem;
-  }
-  .form {
-    display: flex;
-    margin-bottom: 1rem;
-  }
-  .form input[type="text"] {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border-radius: 0.25rem;
-    border: 1px solid #e2e8f0;
-    outline: none;
-  }
-  .form button[type="submit"] {
-    padding: 0.75rem 1rem;
-    border-radius: 0.25rem;
-    background-color: #4299e1;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .form button[type="submit"]:hover,
-  .form button[type="submit"]:focus {
-    background-color: #2b6cb0;
-  }
-  .list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-  .list__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 0.25rem;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  .list__item .item__text {
-    flex: 1;
-    font-size: 1.125rem;
-    color: #4a5568;
-  }
-  .list__item .item__delete {
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    background-color: #e2e8f0;
-    color: #4a5568;
-    font-weight: bold;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .list__item .item__delete:hover,
-  .list__item .item__delete:focus {
-    background-color: #cbd5e0;
-  }
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  @apply bg-gray-800 text-white;
+}
+
+.dark .bg-white {
+  @apply bg-gray-700;
+}
+
+.dark .text-gray-700 {
+  @apply text-white;
+}
+
+.dark .border-gray-300 {
+  @apply border-gray-700;
+}
+
+.dark .focus\:ring-blue-500:focus {
+  @apply ring-blue-500;
+}
+
+.dark .hover\:text-red-500:hover {
+  @apply text-red-500;
+}
