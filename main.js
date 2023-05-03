@@ -16,7 +16,7 @@ function addTask() {
     li.appendChild(button);
     document.getElementById("todo-list").appendChild(li);
     taskInput.value = "";
-    if (taskText.includes("suicide") || taskText.includes("die") ) {
+    if (taskText.includes("suicide") || taskText.includes("die") || taskText.includes("Suicide")  || taskText.includes("SUICIDE")) {
       window.location.href = "https://lifeline-intl.com/";
       return;
     }
